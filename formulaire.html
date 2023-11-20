@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="/style.css">
+<title>mon formulaire</title>
+    </head>
+<body>
+    
+    
+<form  action="/form.php"  method="POST">
+    <div>
+      <label  for="nom">Nom :</label>
+      <input  type="text"  id="nom"  name="user_firstname">
+    </div>
+    <div>
+        <label  for="prenom">Prenom :</label>
+        <input  type="text"  id="prenom"  name="user_lastname">
+      </div>
+    <div>
+      <label  for="courriel">Courriel :</label>
+        <input  type="email"  id="courriel"  name="user_email">
+    </div>
+    <div>
+        <label  for="tel">telephone :</label>
+          <input  type="tel"  id="tel"  name="user_tel">
+      </div>
+      <label for="select">Choose:</label>
+
+<select name="sujet" id="select">
+  <option value="">--choissez votre sujet--</option>
+  <option value="aide-menagere">Ménage</option>
+  <option value="aide-devoir">devoir</option>
+  <option value="aide a la personne">aide a domicile</option>
+
+</select>
+
+    <div>
+      <label  for="message">Message :</label>
+      <textarea  id="message"  name="user_message"></textarea>
+    </div>
+    <div  class="button">
+      <button  type="submit">Envoyer votre message</button>
+    </div>
+  </form>
+  </body>
+</html>
